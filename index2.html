@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профіль користувача</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+        }
+        .edit-profile-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .edit-profile-button:hover {
+            background-color: #777;
+        }
+        .profile-section {
+            padding: 20px;
+        }
+        .booking {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ваш профіль</h1>
+        <button class="edit-profile-button" onclick="goToEditProfile()">Редагувати профіль</button>
+    </header>
+    <div class="profile-section">
+        <h2>Ваші бронювання</h2>
+        <div class="booking">
+            <p><strong>Ескіз:</strong> Ескіз 1</p>
+            <p><strong>Дата:</strong> 15 січня 2024</p>
+        </div>
+        <div class="booking">
+            <p><strong>Ескіз:</strong> Ескіз 2</p>
+            <p><strong>Дата:</strong> 20 лютого 2024</p>
+        </div>
+        <!-- Додайте більше бронювань за потреби -->
+    </div>
+    <script>
+        function goToEditProfile() {
+            window.location.href = 'chprofile.html';
+        }
+    </script>
+</body>
+</html>
